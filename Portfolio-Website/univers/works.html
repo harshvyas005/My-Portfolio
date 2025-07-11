@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width,initial-scale=1" name="viewport" />
+  <meta content="Harsh Vyas - Experience" name="description" />
+  <meta content="Harsh Vyas" name="author" />
+  <link href="./assets/favicon.ico" rel="icon" />
+  <title>Experience</title>
+  <link href="./main.3f6952e4.css" rel="stylesheet" />
+  <style>
+    .timeline {
+      position: relative;
+      padding: 40px 0;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      width: 2px;
+      background: #ccc;
+      top: 0;
+      bottom: 0;
+      transform: translateX(-50%);
+    }
+
+    .timeline-block {
+      position: relative;
+      width: 50%;
+      padding: 20px 40px;
+      box-sizing: border-box;
+    }
+
+    .timeline-block:nth-child(odd) ul.details {
+  text-align: left;
+  display: inline-block;
+}
+
+
+    .timeline-block:nth-child(even) {
+      left: 50%;
+    }
+
+    .timeline-content {
+      background: #fff;
+      border: 1px solid #e6e6e6;
+      padding: 20px;
+      border-radius: 8px;
+      position: relative;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .timeline-block::before {
+      content: "";
+      position: absolute;
+      top: 20px;
+      width: 20px;
+      height: 20px;
+      background: #000;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .timeline-block:nth-child(odd)::before {
+      right: -10px;
+    }
+
+    .timeline-block:nth-child(even)::before {
+      left: -10px;
+    }
+
+    .company {
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    .role {
+      color: #777;
+      font-weight: 500;
+    }
+
+    .date-remote {
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    .remote-badge {
+      background-color: #222;
+      color: #fff;
+      font-size: 0.75rem;
+      padding: 2px 6px;
+      border-radius: 4px;
+      margin-left: 10px;
+    }
+
+   ul.details {
+  list-style: disc;
+  padding-left: 20px;  /* aligns bullets closer */
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+ul.details li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+
+
+    @media screen and (max-width: 768px) {
+      .timeline::before {
+        left: 10px;
+      }
+
+      .timeline-block {
+        width: 100%;
+        left: 0 !important;
+        text-align: left !important;
+        padding-left: 40px;
+        padding-right: 20px;
+        margin-bottom: 30px;
+      }
+
+      .timeline-block::before {
+        left: 0 !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="site-border-left"></div>
+  <div id="site-border-right"></div>
+  <div id="site-border-top"></div>
+  <div id="site-border-bottom"></div>
+
+  <header>
+    <nav class="navbar navbar-fixed-top navbar-default">
+      <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+     <li><a href="./index.html" title="">01 : Home</a></li>
+            <li><a href="./skills.html" title="" >02 : Skills</a></li>
+            <li><a href="./Project.html">03 : Project</a></li>
+            <li><a href="./works.html" title="" class="active">04 : Experience</a></li>
+            <li><a href="./about.html" title="">05 : About Me</a></li>
+            <li><a href="./contact.html" title="">06 : Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="section-container">
+    <div class="container">
+      <div class="row section-container-spacer">
+        <div class="col-md-8 col-md-offset-2 text-center">
+          <h1 class="h2">04 : Experience</h1>
+          <p>A timeline of professional growth and impactful backend engineering work.</p>
+        </div>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Ambition Pharma -->
+        <div class="timeline-block">
+          <div class="timeline-content">
+            <div class="company">Ambition Pharma</div>
+            <div class="role">Java Intern</div>
+            <div class="date-remote">Jan 2024 – Nov 2024 <span class="remote-badge">Remote</span></div>
+            <ul class="details">
+              <li>Developed backend using Spring Boot, improving application performance by 30%.</li>
+              <li>Collaborated with QA teams to identify and resolve 50+ issues before deployment.</li>
+              <li>Designed and optimized 20+ APIs, enhancing database performance by 25%.</li>
+              <li>Optimized queries and schema, improving data retrieval speed by 20%.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 1Day-Cart -->
+        <div class="timeline-block">
+          <div class="timeline-content">
+            <div class="company">1Day-Cart</div>
+            <div class="role">Backend Developer (Freelance)</div>
+            <div class="date-remote">Dec 2024 – Present <span class="remote-badge">Remote</span></div>
+            <ul class="details">
+              <li>Leading Phase 2 development of high-scale eCommerce Android app with focus on scalability.</li>
+              <li>Shaped 15+ RESTful APIs and improved database queries by 30%.</li>
+              <li>Built backend handling 100K+ requests per month using Express and MySQL.</li>
+              <li>Ensured security and improved transaction processing.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="./main.70a66962.js"></script>
+</body>
+</html>
