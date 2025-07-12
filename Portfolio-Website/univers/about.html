@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="description" name="description" />
     <meta name="google" content="notranslate" />
     <meta
@@ -24,21 +24,48 @@
     <title>About</title>
 
     <link href="./main.3f6952e4.css" rel="stylesheet" />
-  </head>
 
-  <body class="">
     <style>
       .paragraph-block {
         text-align: justify;
         line-height: 1.7;
         margin-bottom: 25px;
       }
+
+      .about-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        align-items: center;
+      }
+
+      .about-text,
+      .about-image {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .about-image img {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      @media (max-width: 768px) {
+        .about-wrapper {
+          flex-direction: column;
+        }
+      }
     </style>
+  </head>
+
+  <body class="">
     <div id="site-border-left"></div>
     <div id="site-border-right"></div>
     <div id="site-border-top"></div>
     <div id="site-border-bottom"></div>
-    <!-- Add your content of header -->
+
+    <!-- Header -->
     <header>
       <nav class="navbar navbar-fixed-top navbar-default">
         <div class="container">
@@ -57,7 +84,6 @@
 
           <div class="collapse navbar-collapse" id="navbar-collapse">
             <ul class="nav navbar-nav">
-              <
               <li><a href="./index.html" title="">01 : Home</a></li>
               <li><a href="./Skills.html" title="">02 : Skills</a></li>
               <li><a href="./Project.html" title="">03 : Projects</a></li>
@@ -72,6 +98,7 @@
       </nav>
     </header>
 
+    <!-- Main Content -->
     <div class="section-container">
       <div class="container">
         <div class="row">
@@ -82,8 +109,8 @@
 
             <div class="row">
               <div class="col-md-10 col-md-offset-1">
-                <div class="row">
-                  <div class="col-xs-12 col-md-6">
+                <div class="about-wrapper">
+                  <div class="about-text">
                     <h3>Who I Am</h3>
                     <p class="paragraph-block">
                       I’m Harsh Vyas, a passionate backend developer with a
@@ -116,11 +143,10 @@
                     </p>
                   </div>
 
-                  <div class="col-xs-12 col-md-6">
+                  <div class="about-image">
                     <img
                       src="./assets/images/harshPhoto2.jpg"
-                      class="img-responsive"
-                      alt=""
+                      alt="Harsh Vyas"
                     />
                   </div>
                 </div>
